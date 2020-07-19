@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        toolbar:title="关于"
+        toolbar:titleTextColor="@color/white">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/about_act_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/uniactive"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="UniActive"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/iv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Version 1.0.0"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_check_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        item:show_bottom="true"
+        item:show_icon="false"
+        item:text="检查新版本" />
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        item:show_bottom="false"
+        item:show_icon="false"
+        item:text="分享本软件" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/iv_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/iv_team"
+            android:gravity="center"
+            android:text="北航2020年春季软件工程"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/iv_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/iv_copyright"
+            android:gravity="center"
+            android:text="团队成员: 张万聪 丁禹衡 姜佳伟 耿聪"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/iv_copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Copyright © 2020 UniActive"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

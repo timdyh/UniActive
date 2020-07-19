@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar"/>
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_avatar"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="您尚未登录"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_nickname"
+            android:layout_below="@id/tv_nickname"
+            android:layout_marginTop="5dp"
+            android:text="立即登录" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@id/tv_edit_profile"
+            android:layout_toEndOf="@id/tv_edit_profile"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_participate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        item:show_bottom="true"
+        item:show_icon="true"
+        item:img="@drawable/history"
+        item:text="我参与的活动" />
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        item:show_bottom="true"
+        item:show_icon="true"
+        item:img="@drawable/release"
+        item:text="我发布的活动" />
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        item:show_bottom="false"
+        item:show_icon="true"
+        item:img="@drawable/collect"
+        item:text="我收藏的活动" />
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        item:show_bottom="true"
+        item:show_icon="true"
+        item:img="@drawable/update"
+        item:text="反馈" />
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        item:show_bottom="false"
+        item:show_icon="true"
+        item:img="@drawable/about"
+        item:text="关于" />
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        item:show_bottom="false"
+        item:show_icon="true"
+        item:img="@drawable/setting"
+        item:text="设置" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        toolbar:title="设置"
+        toolbar:titleTextColor="@color/white">
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_change_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        item:show_bottom="true"
+        item:show_icon="false"
+        item:text="修改密码" />
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_logoff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        item:show_bottom="true"
+        item:show_icon="false"
+        item:text="注销账号" />
+
+    <com.example.uniactive.ui.home.HomeItemView
+        android:id="@+id/iv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        item:show_bottom="false"
+        item:show_icon="false"
+        item:text="退出登录" />
+
+</LinearLayout>

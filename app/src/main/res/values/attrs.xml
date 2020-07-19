@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="show_bottom" format="boolean" />
+
+    <declare-styleable name="HomeItemView">
+        <attr name="img" format="integer" />
+        <attr name="text" format="string" />
+        <attr name="show_bottom" />
+        <attr name="show_icon" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfileItemView">
+        <attr name="title" format="string" />
+        <attr name="show_bottom" />
+        <attr name="show_right" format="boolean" />
+        <attr name="editable" format="boolean" />
+    </declare-styleable>
+</resources>
