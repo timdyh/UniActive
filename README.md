@@ -10,6 +10,11 @@
 
 Android 7.0 (API 24) 及以上
 
+### 下载地址
+
+链接: https://pan.baidu.com/s/1okKWnwj-pdIqH3tnOWitQw
+密码: ej1q
+
 ### See also
 
 * <a href="https://github.com/TimDyh/UniActive-Server" target="_blank">UniActive-Server</a>
